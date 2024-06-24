@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/Gotham-Rounded-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/Gotham-Rounded-Book_.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../fonts/Gotham-Rounded-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../fonts/Gotham-Rounded-Medium.ttf') format('truetype');
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+    outline: none;
+}
+
+:root{
+    --btnsize: (100vw - 400px);
+}
+
+*{
+    font-family: 'Gotham Medium','Varela Round', sans-serif;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex-cntr{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    color: white;
+}
+
+.sidebar > svg{
+    color: white;
+}
+
+.sidebar > div{
+    padding: 8%;
+    border-radius: 10px;
+}
+
+.sidebar-options div a {
+    position: relative;
+    top: 5px;
+    left:10px;
+}
+
+.main-content{
+    width: calc(100vw - 300px);
+}
+
+.sidebar-options, .playlists, .main-content{
+    margin: 8px;
+    padding: 10px;
+}
+
+.item-bg{
+    background-color: #121212;
+}
+
+.gap{
+    gap: 16px;
+}
+
+.sidebar-options > gap{
+    gap:5px;
+}
+
+.playlist-header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-create-button a{
+    padding: 1px 6px;
+    border-radius: 100%;
+    color: white;
+    font-size: 24px;
+}
+
+
+.tiles a:hover{
+    background-color: rgba(255,255,255,.2);
+}
+
+.header-create-button a:hover{
+    background-color: rgba(255,255,255,.2);
+}
+
+
+
+.tile-img img, .playlist-btn img{
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.tile-about{
+    justify-content: center;
+}
+
+.tile-title, .tile-type{
+    font-family: 'Gotham Book', 'Varela Round', sans-serif;
+}
+.tile-title{
+    font-size: 12px;
+}
+
+.tile-type{
+    font-size: 10px;
+}
+
+.tile-gap{
+    gap:4px;
+}
+
+.playlists-tiles > a:hover{
+    background-color: rgba(255,255,255,.10);
+}
+
+
+.playlists-tiles{
+    max-height: 330px;
+    overflow-y: scroll;
+}
+
+.main-content{
+    border-radius: 10px;
+    height: calc(100vh - 101px);
+    overflow-y: scroll;
+}
+
+.grid-cntr{
+    display:grid;
+}
+
+.playlist-buttons{
+    color:white;
+    grid-template-columns: calc(var(--btnsize)/4) calc(var(--btnsize)/4) calc(var(--btnsize)/4) calc(var(--btnsize)/4);
+    grid-gap: 10px;
+
+}
+
+
+.playlist-btn{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.main-buttons-container{
+    padding: 12px;
+}
+
+.main-buttons{
+    align-items: center;
+}
+
+.nav-btn a button{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 32px;
+    height: 32px;
+    border-radius: 50px ;
+    border: none;
+}
+
+
+.nav-btn button:hover{
+    cursor: not-allowed;
+}
+
+.install-app-btn button{
+    color: white;
+    background-color: black;
+}
+
+.explore-premium button, .install-app-btn button{
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    border: none;
+    font-weight: 800;
+}
+
+.explore-premium button:hover, .install-app-btn button:hover, .notification-btn button:hover{
+    font-size: 11px;
+    border: 1px solid gray;
+}
+
+.main-buttons-container{
+    justify-content: space-between;
+}
+
+.notification-btn button{
+    background-color: black;
+    border: none;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.profile-btn img{
+    height: 28px;
+    width: 28px;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 100%;
+}
+
+
+.sections .section-title{
+    font-size: 24px;
+    color: white;
+}
+
+.sections .section-see-more{
+    font-size: 12px;
+    color: gray;
+}
+
+.sections .section-title a:hover, .sections .section-see-more a:hover{
+    text-decoration: underline;
+}
+.section-header{
+    justify-content: space-between;
+}
+
+.section-items, .section-items-pl{
+    justify-content: space-between;
+    color: white;
+}
+
+.section-items div img, .section-items-pl div img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+.section-items div img{
+    border-radius: 100%;
+}
+
+
+.section-tile-title{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section-tile-tag{
+    font-size: 12px;
+    color: grey;
+}
+
+.searchbar input[type=search]{
+    padding: 15px 10px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+
+.searchbar input[type=search]:hover{
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
+    outline-offset: -1px;
+}
+
+.searchbar input[type=search]:focus{
+    outline: 2px solid white;
+}
