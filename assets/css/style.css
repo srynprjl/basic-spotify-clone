@@ -247,6 +247,7 @@ a{
 .sections .section-title a:hover, .sections .section-see-more a:hover{
     text-decoration: underline;
 }
+
 .section-header{
     justify-content: space-between;
 }
@@ -296,4 +297,51 @@ a{
 
 .searchbar input[type=search]:focus{
     outline: 2px solid white;
+}
+
+.browse-all{
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.browse{
+    padding: 14px;
+    color: white;
+    font-size: 20px;
+    height: 110px;
+    border-radius: 10px;
+}
+
+.footer{
+    justify-content: space-between;
+    color: white;
+}
+
+.social-media-links{
+    justify-content: center;
+}
+
+.social-media-icons a svg{
+    border-radius: 100px;
+    padding: 10px;
+    background-color: black;
+}
+
+.social-media-icons a svg:hover{
+
+    background-color: rgb(36, 34, 34);
+}
+
+.foot-section-options{
+    font-size: 14px;
+    gap:7px;
+}
+
+.foot-section-options div a {
+    color: gray;
+}
+
+.foot-section-options div a:hover{
+    text-decoration: underline;
+    color: white;
 }
