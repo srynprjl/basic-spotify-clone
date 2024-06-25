@@ -235,7 +235,7 @@ a{
 
 
 .sections .section-title{
-    font-size: 24px;
+    font-size: 28px;
     color: white;
 }
 
@@ -275,9 +275,13 @@ a{
     font-weight: 300;
 }
 
-.section-tile-tag{
+.section-tile-tag, .section-subtitle{
     font-size: 12px;
     color: grey;
+}
+
+.section-subtitle{
+    font-size: 14px;
 }
 
 .searchbar input[type=search]{
@@ -344,4 +348,13 @@ a{
 .foot-section-options div a:hover{
     text-decoration: underline;
     color: white;
+}
+
+.notis{
+    margin: 75px;
+}
+
+.notis-content .section-subtitle{
+    color: white;
+    font-size: 16px;
 }
