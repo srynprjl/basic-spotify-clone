@@ -653,3 +653,55 @@ hr {
   .show{
     display: block;
   }
+
+.playlist-content{
+  background: linear-gradient(180deg, #014379, #121212);
+  color: white;
+}
+
+.playlist-icon img{
+  width: 128px;
+  height: 128px;
+}
+
+.playlist-type{
+  font-size: 16px;
+}
+
+.playlist-title{
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.playlist-desc{
+  font-size: 14px;
+}
+
+.playlist-author{
+  font-size: 14px;
+}
+
+.play{
+  gap: 10px;
+}
+
+.playlist-start button{
+  background-color: #2f9410;
+  padding: 16px 18px;
+  border-radius: 100%;
+  border: none;
+}
+
+.playlist-more-options{
+  align-content: center;
+}
+
+.playlist-button {
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+}
+
+.playlist-sorts{
+  font-size: 14px;
+}
