@@ -145,13 +145,15 @@ a {
 }
 
 .playlists-tiles {
-  max-height: 330px;
+  height: 300px;
+  max-height: 350px;
   overflow-y: scroll;
+  border-radius: 8px;
 }
 
 .main-content {
   border-radius: 10px;
-  height: calc(100vh - 101px);
+  height: 530px;
   overflow-y: scroll;
 }
 
@@ -704,4 +706,13 @@ hr {
 
 .playlist-sorts{
   font-size: 14px;
+}
+
+.player-footer{
+  position: absolute;
+  left: -2px;
+  bottom: 0;
+  width: 100vw;
+  background-color: wheat;
+  height: 80px;
 }

@@ -1,4 +1,3 @@
-document 
 
 function function2() {
     var dropdowncnt = document.getElementById('dropdown');
