@@ -159,6 +159,17 @@ songItemPlay.forEach((element ,i)=>{
   })
 })
 
+progressBar.addEventListener('ended', ()=>{
+  if(audioElement.currentTime == audioElement.duration){
+    if(songIndex >= 4){
+      songIndex = 0
+    } else{
+      songIndex++;
+    }
+  }  
+  navigation();
+})
+
 previousItem.addEventListener('click', () =>{
   if(songIndex <= 0){
     songIndex = 4
@@ -166,7 +177,6 @@ previousItem.addEventListener('click', () =>{
     songIndex--;
   }
   navigation();
-  playerData()
 })
 
 nextItem.addEventListener('click', ()=>{
@@ -176,7 +186,6 @@ nextItem.addEventListener('click', ()=>{
       songIndex++;
     }
     navigation();
-    playerData()
 })
 
 
