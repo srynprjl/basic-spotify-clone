@@ -662,7 +662,29 @@
                     </div>
                 </div>
             </div>
-            <div class="player-footer"></div>
+            <div class="player-footer flex-cntr flex-row">
+                <div class="playerData flex-cntr flex-row">
+                    <div><img src="../assets/img/logo.png" alt="" id="footer-logo"></div>
+                    <div id="">
+                        <div id="playerName">N/A</div>
+                        <div id="playerArtist">N/A</div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="icons flex-cntr flex-row">
+                        <div><i class="fa-solid fa-backward" id="prev"></i></div>
+                        <div><i class="fa-solid fa-play" id="masterPlay"></i></div>
+                        <div><i class="fa-solid fa-forward" id="next"></i></div>
+                    </div>
+                    <input type="range" name="progressBar" id="playerProgressBar" value="0" min="0" max="100">
+                </div>
+
+                <div class="flex-cntr flex-row">
+                    <div><i class="fa-solid fa-volume-low" id="vol-icon"></i></div>
+                    <div><input type="range" name="volume" id="volume" min="0" max="1" step="0.1" value="0.5"></div>    
+                </div>
+            </div>
             <script src="../assets/js/script.js"></script>
         </body>
     </html>
