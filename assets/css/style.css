@@ -689,9 +689,11 @@ hr {
 
 .playlist-start button{
   background-color: #2f9410;
-  padding: 16px 18px;
+  padding: 16px 17.9px;
+  color: white;
   border-radius: 100%;
   border: none;
+  font-size: 20px;
 }
 
 .playlist-more-options{
@@ -713,45 +715,58 @@ hr {
   left: -2px;
   bottom: 0;
   width: 100vw;
-  background-color: wheat;
-  height: 80px;
-}
-
-/* #create-a-playlist{
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #121212;
-  padding: 50px;
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
-  gap: 26px;
-}
-
-.create-title{
-  font-size: 32px;
-}
-
-.create-playlist-title, .create-playlist-desc{
-  font-size: 20px;
-}
-
-.create-playlist-title-input input{
-  width: 300px;
-  height: 30px;
-}
-
-
-.create-playlist-desc-input textarea{
-  width: 300px;
-  height: 50px;
-}
-
-.create-btn{
-  background-color: #2f9410;
+  background-color: #3b3838;
+  height: 54px;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
   color: white;
-  border:none;
-  padding: 10px 20px;
-  border-radius: 100px;
-} */
+}
+
+.icons div i{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.songItem{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.songflex, .playerData{
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.songData, .playerData{
+    gap: 16px   ;
+}
+
+.songArt{
+    width: 48px;
+}
+.songPlay svg{
+    width: 24px;
+    height: 24px;
+}
+
+.songItem:hover{
+    background-color: #121212;
+}
+
+.icons{
+    gap: 16px;
+    justify-content: center;
+}
+
+#playerProgressBar{
+    width: 50vw;
+    text-align: center;
+}
+
+#footer-logo{
+    width: 48px;
+    height: 48px;
+}

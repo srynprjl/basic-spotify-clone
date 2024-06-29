@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Spotify</title>
         <link rel="stylesheet" href="../assets/css/style.css">
+
+        <script src="https://kit.fontawesome.com/dd2918b6db.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div>
@@ -498,15 +500,15 @@
                             <div class="playlist-author flex-cntr flex-row gap">
                                 <div class="author">srynprjl, </div>
                                 <div class="saves">2 saves, </div>
-                                <div class="time">1 songs, over 24 hrs</div>
+                                <div class="time">5 songs, 14 mins</div>
                             </div>
                         </div>
                     </div>
                     <div class="playlist-button flex-cntr flex-row">
                         <div class="play flex-cntr flex-row">
                             <div class="playlist-start">
-                                <button>
-                                    <svg width="24px" height="24px" viewBox="-3 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>play</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-419.000000, -571.000000)" fill="#ffffff"> <path d="M440.415,583.554 L421.418,571.311 C420.291,570.704 419,570.767 419,572.946 L419,597.054 C419,599.046 420.385,599.36 421.418,598.689 L440.415,586.446 C441.197,585.647 441.197,584.353 440.415,583.554" id="play" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                                <button id="start">
+                                    <i class="fa-solid fa-play" id="main-play"></i>    
                                 </button>
                             </div>
                                 <div class="playlist-more-options"><svg width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="18" cy="12" r="1.5" transform="rotate(90 18 12)" fill="#ffffff"></circle> <circle cx="12" cy="12" r="1.5" transform="rotate(90 12 12)" fill="#ffffff"></circle> <circle cx="6" cy="12" r="1.5" transform="rotate(90 6 12)" fill="#ffffff"></circle> </g></svg></div>
@@ -514,7 +516,92 @@
                         <div class="playlist-sorts">List</div>
                     </div>
                     <div class="playlist-body">
-                        
+                        <div class="songList">
+                            <div class="songItem songflex flex-cntr">
+                                <div class="songData songflex flex-cntr flex-row">
+                                    <div class="songPlay">
+                                        <i id="0" class="songitemplay fa-solid fa-play"></i>
+                                    </div> <!--number-->
+                                    <div ><img src="../assets/img/logo.png" alt="" class="songArt"></div> <!--cover art-->
+                                    <div class="songInfo flex-cntr flex-col"> <!--song info-->
+                                        <div class="songTitle"></div> <!--title-->
+                                        <div class="songArtist"></div> <!--artist-->
+                                    </div>
+                                </div>
+                                <div class="songAlbum"></div> <!--album-->
+                                <div class="songDate"></div> <!--date added-->
+                                <div class="songDuration"></div> <!--duration-->
+                            </div>
+                        </div>
+                        <div class="songList">
+                            <div class="songItem songflex flex-cntr">
+                                <div class="songData songflex flex-cntr flex-row">
+                                    <div class="songPlay">
+                                        <i id="1" class="songitemplay fa-solid fa-play"></i>
+                                    </div> <!--number-->
+                                    <div><img src="../assets/img/logo.png" alt="" class="songArt"></div> <!--cover art-->
+                                    <div class="songInfo flex-cntr flex-col"> <!--song info-->
+                                        <div class="songTitle"></div> <!--title-->
+                                        <div class="songArtist"></div> <!--artist-->
+                                    </div>
+                                </div>
+                                <div class="songAlbum"></div> <!--album-->
+                                <div class="songDate"></div> <!--date added-->
+                                <div class="songDuration"></div> <!--duration-->
+                            </div>
+                        </div>
+                        <div class="songList">
+                            <div class="songItem songflex flex-cntr">
+                                <div class="songData songflex flex-cntr flex-row">
+                                    <div class="songPlay">
+                                        <i id="2" class="songitemplay fa-solid fa-play"></i>
+                                    </div> <!--number-->
+                                    <div><img src="../assets/img/logo.png" alt="" class="songArt"></div> <!--cover art-->
+                                    <div class="songInfo flex-cntr flex-col"> <!--song info-->
+                                        <div class="songTitle"></div> <!--title-->
+                                        <div class="songArtist"></div> <!--artist-->
+                                    </div>
+                                </div>
+                                <div class="songAlbum"></div> <!--album-->
+                                <div class="songDate"></div> <!--date added-->
+                                <div class="songDuration"></div> <!--duration-->
+                            </div>
+                        </div>
+                        <div class="songList">
+                            <div class="songItem songflex flex-cntr">
+                                <div class="songData songflex flex-cntr flex-row">
+                                    <div class="songPlay">
+                                        <i id="3" class="songitemplay fa-solid fa-play"></i>
+                                    </div> <!--number-->
+                                    <div><img src="../assets/img/logo.png" alt="" class="songArt"></div> <!--cover art-->
+                                    <div class="songInfo flex-cntr flex-col"> <!--song info-->
+                                        <div class="songTitle"></div> <!--title-->
+                                        <div class="songArtist"></div> <!--artist-->
+                                    </div>
+                                </div>
+                                <div class="songAlbum"></div> <!--album-->
+                                <div class="songDate"></div> <!--date added-->
+                                <div class="songDuration"></div> <!--duration-->
+                            </div>
+                        </div>
+                        <div class="songList">
+                            <div class="songItem songflex flex-cntr">
+                                <div class="songData songflex flex-cntr flex-row">
+                                    <div class="songPlay">
+                                        <i id="4" class="songitemplay fa-solid fa-play"></i>
+
+                                    </div> <!--number-->
+                                    <div><img src="../assets/img/logo.png" alt="" class="songArt"></div> <!--cover art-->
+                                    <div class="songInfo flex-cntr flex-col"> <!--song info-->
+                                        <div class="songTitle"></div> <!--title-->
+                                        <div class="songArtist"></div> <!--artist-->
+                                    </div>
+                                </div>
+                                <div class="songAlbum"></div> <!--album-->
+                                <div class="songDate"></div> <!--date added-->
+                                <div class="songDuration"></div> <!--duration-->
+                            </div>
+                        </div>
                     </div>
 
 
@@ -675,7 +762,28 @@
                     </div>
                 </div>
             </div>
-            <div class="player-footer">
+            <div class="player-footer flex-cntr flex-row">
+                <div class="playerData flex-cntr flex-row">
+                    <div><img src="../assets/img/logo.png" alt="" id="footer-logo"></div>
+                    <div id="">
+                        <div id="playerName">N/A</div>
+                        <div id="playerArtist">N/A</div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="icons flex-cntr flex-row">
+                        <div><i class="fa-solid fa-backward" id="prev"></i></div>
+                        <div><i class="fa-solid fa-play" id="masterPlay"></i></div>
+                        <div><i class="fa-solid fa-forward" id="next"></i></div>
+                    </div>
+                    <input type="range" name="progressBar" id="playerProgressBar" value="0" min="0" max="100">
+                </div>
+
+                <div class="flex-cntr flex-row">
+                    <div><i class="fa-solid fa-volume-low" id="vol-icon"></i></div>
+                    <div><input type="range" name="volume" id="volume" min="0" max="1" step="0.1" value="0.5"></div>    
+                </div>
             </div>
         </div>
         
