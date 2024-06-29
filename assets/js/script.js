@@ -26,6 +26,7 @@ let songs = [
   {songIndex: "2", songDuration:"3:14", songAlbum:"Nayan (2024)",songName: "Nayan", songArtist:"Bibash JK", filePath: "../assets/audio/nayan.mp3", coverPath: "../assets/songCover/nayan.jpg"},
   {songIndex: "3", songDuration:"2:35", songAlbum:"Samjhana Cha Baki (2022)",songName: "Samjhana Cha Baki", songArtist:"Bibash JK", filePath: "../assets/audio/samjhana-chaa-baki.mp3", coverPath: "../assets/songCover/samjhana-chaa-baki.jpg"},
   {songIndex: "4", songDuration:"4:20", songAlbum:"Sapana Ko Mayalu (2019)",songName: "Sapana Ko Mayalu", songArtist:"The Elements", filePath: "../assets/audio/sapana-ko-mayalu.mp3", coverPath: "../assets/songCover/sapana-ko-mayalu.jpg"},
+  {songIndex: "5", songDuration:"4:21", songAlbum:"Birsiney Hau Ki (2019)",songName: "Birsiney Hau Ki", songArtist:"The Elements", filePath: "../assets/audio/birsiney-hau-ki.mp3", coverPath: "../assets/songCover/birsiney-hau-ki.jpg"}
 ]
 
 let audioElement = new Audio(songs[0].filePath);
@@ -161,7 +162,7 @@ songItemPlay.forEach((element ,i)=>{
 
 progressBar.addEventListener('ended', ()=>{
   if(audioElement.currentTime == audioElement.duration){
-    if(songIndex >= 4){
+    if(songIndex >= 5){
       songIndex = 0
     } else{
       songIndex++;
@@ -172,7 +173,7 @@ progressBar.addEventListener('ended', ()=>{
 
 previousItem.addEventListener('click', () =>{
   if(songIndex <= 0){
-    songIndex = 4
+    songIndex = 5
   } else{
     songIndex--;
   }
@@ -180,7 +181,7 @@ previousItem.addEventListener('click', () =>{
 })
 
 nextItem.addEventListener('click', ()=>{
-    if(songIndex >= 4){
+    if(songIndex >= 5){
       songIndex = 0
     } else{
       songIndex++;
