@@ -1,0 +1,43 @@
+@media only screen and (max-width: 800px) {
+    .explore-premium ,.install-app-btn, .songAlbum, .songDate, .home span, .search span, .header-text, .header-create-button, .tile-about, .searchbar input{
+        display: none;
+    }
+
+.sidebar{
+    width: 100px;
+}
+
+.playlists{
+    height: 450px;
+}
+
+.playlists-tiles{
+    height: 430px;
+}
+
+.browse-all{
+    grid-template-columns: auto auto;
+}
+
+.home, .search, .playlist-header, .playlists-subheader{
+    justify-content: center;
+}
+
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+.playlist-buttons{
+    display: none;
+}   
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .playlist-buttons, .item-subtitle   {
+        display: none;
+    }   
+    }
+    

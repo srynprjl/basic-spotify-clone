@@ -193,7 +193,7 @@ nextItem.addEventListener('click', ()=>{
 let volumeSlider = document.getElementById("volume");
 let volumeIcon = document.getElementById("vol-icon");
 
-volumeSlider.addEventListener('input', ()=>{
+volumeSlider.addEventListener('change', ()=>{
   if(volumeSlider.value <= 0 ){
     volumeIcon.classList.remove("fa-volume-off");
     volumeIcon.classList.add("fa-volume-mute");
@@ -210,6 +210,3 @@ volumeSlider.addEventListener('input', ()=>{
   }
   audioElement.volume = volumeSlider.value;
 })
-
-
-
