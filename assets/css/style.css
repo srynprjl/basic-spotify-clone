@@ -772,7 +772,3 @@ hr {
   text-decoration: underline;
   color: white;
 }
-
-a[rel="me"]{
-  display:none;
-}

@@ -1,43 +1,59 @@
 
 function function2() {
-    var dropdowncnt = document.getElementById('dropdown');
-    dropdowncnt.classList.toggle("show");
+  var dropdowncnt = document.getElementById('dropdown');
+  dropdowncnt.classList.toggle("show");
 }
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
   }
+}
 
 
 // song player
 
+
 let songs = [
-  {songIndex: "0", songDuration:"3:09", songAlbum:"COD Classic Hits", songName: "Euta Pari", songArtist:"Crew on Destiny", filePath: "../assets/audio/euta-pari-basthyo.mp3", coverPath: "../assets/songCover/euta-pari-bashtyo.jpg"},
-  {songIndex: "1", songDuration:"3:37", songAlbum:"Kya Kardiya (2024)",songName: "Kya Kardiya", songArtist:"Sushant KC", filePath: "../assets/audio/kya-kardiya.mp3", coverPath: "../assets/songCover/kya-kardiya.jpg"},
-  {songIndex: "2", songDuration:"3:14", songAlbum:"Nayan (2024)",songName: "Nayan", songArtist:"Bibash JK", filePath: "../assets/audio/nayan.mp3", coverPath: "../assets/songCover/nayan.jpg"},
-  {songIndex: "3", songDuration:"2:35", songAlbum:"Samjhana Cha Baki (2022)",songName: "Samjhana Cha Baki", songArtist:"Bibash JK", filePath: "../assets/audio/samjhana-chaa-baki.mp3", coverPath: "../assets/songCover/samjhana-chaa-baki.jpg"},
-  {songIndex: "4", songDuration:"4:20", songAlbum:"Sapana Ko Mayalu (2019)",songName: "Sapana Ko Mayalu", songArtist:"The Elements", filePath: "../assets/audio/sapana-ko-mayalu.mp3", coverPath: "../assets/songCover/sapana-ko-mayalu.jpg"},
-  {songIndex: "5", songDuration:"4:21", songAlbum:"Birsiney Hau Ki (2019)",songName: "Birsiney Hau Ki", songArtist:"The Elements", filePath: "../assets/audio/birsiney-hau-ki.mp3", coverPath: "../assets/songCover/birsiney-hau-ki.jpg"}
+  { songIndex: "0", songName: "Khaseka Tara", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:01", filePath: "../assets/audio/khasekatara-albatross.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "1", songName: "Marijau", songArtist: "Bikki Gurung", songAlbum: "Bikki Gurung Hits", songDuration: "4:25", filePath: "../assets/audio/marijau-bikki.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "2", songName: "Manaka Kura", songArtist: "Purna Rai", songAlbum: "Purna Rai Hits", songDuration: "2:52", filePath: "../assets/audio/manakakura-purna.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "3", songName: "Sapana Ko Mayalu", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "3:04", filePath: "../assets/audio/sapanakomayalu-elements.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "4", songName: "Birsiney Hau Ki", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "3:06", filePath: "../assets/audio/birsiney-elements.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "5", songName: "Euta Pari", songArtist: "Crew On Destiny", songAlbum: "COD Hits", songDuration: "3:40", filePath: "../assets/audio/eutapari-cod.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "6", songName: "Timi Bhane", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:28", filePath: "../assets/audio/timibhane-albatross.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "7", songName: "Rail Garee", songArtist: "Bipul Chettri", songAlbum: "Bipul Chettri Hits", songDuration: "3:06", filePath: "../assets/audio/railgaree-bipul.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "8", songName: "Sadhana", songArtist: "John Rai", songAlbum: "John Rai Hits", songDuration: "2:01", filePath: "../assets/audio/sadhana-johnrai.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "9", songName: "Mero Prem", songArtist: "AXIX", songAlbum: "AXIX Hits", songDuration: "3:42", filePath: "../assets/audio/meroprem-axix.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "10", songName: "Syndicate", songArtist: "Bipul Chettri", songAlbum: "Bipul Chettri Hits", songDuration: "4:44", filePath: "../assets/audio/syndicate-bipul.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "11", songName: "Samarpan", songArtist: "Sabin Rai", songAlbum: "Sabin Rai Hits", songDuration: "3:46", filePath: "../assets/audio/samarpan-sabinrai.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "12", songName: "Adhuro Prem", songArtist: "AXIX", songAlbum: "AXIX Hits", songDuration: "4:15", filePath: "../assets/audio/adhuroprem-axix.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "13", songName: "Nachaheko Hoina", songArtist: "The Edge Band", songAlbum: "Edge Band Hits", songDuration: "5:27", filePath: "../assets/audio/nachahekohoina-theedge.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "14", songName: "Samjhana Chaa Baki", songArtist: "Bibash JK", songAlbum: "Bibash Hits", songDuration: "2:35", filePath: "../assets/audio/samjhana-bibash.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "15", songName: "Putali", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "4:30", filePath: "../assets/audio/putali-elements.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "16", songName: "Aaudai Jadai", songArtist: "The Uglyz", songAlbum: "The Uglyz Hits", songDuration: "4:09", filePath: "../assets/audio/aaudaijadai-theuglyz.mp3", coverPath: "../assets/img/cover/logo.png" },
+  { songIndex: "17", songName: "Mercedez Benz", songArtist: "Cobweb", songAlbum: "Cobweb Hits", songDuration: "5:04", filePath: "../assets/audio/mercedezbenz-cobweb.mp3", coverPath: "../assets/img/cover/logo.png" },
+
 ]
 
+var length = songs.length - 1;
+document.getElementById('time').innerText = length+1 + " songs"
 let audioElement = new Audio(songs[0].filePath);
-let songIndex=0;
+let songIndex = 0;
 let mainPlay = document.getElementById("start");
 let main = document.getElementById("main-play")
 let masterPlay = document.getElementById('masterPlay');
 let progressBar = document.getElementById('playerProgressBar');
 let songArt = Array.from(document.getElementsByClassName('songArt'));
-let songTitle  = Array.from(document.getElementsByClassName('songTitle'));
-let songArtist  = Array.from(document.getElementsByClassName('songArtist'));
+let songTitle = Array.from(document.getElementsByClassName('songTitle'));
+let songArtist = Array.from(document.getElementsByClassName('songArtist'));
 let songAlbum = Array.from(document.getElementsByClassName('songAlbum'));
 let songDate = Array.from(document.getElementsByClassName('songDate'));
 let songDuration = Array.from(document.getElementsByClassName('songDuration'));
@@ -51,7 +67,7 @@ let nextItem = document.getElementById('next');
 
 
 //setting data in html
-songs.forEach((element, i)=>{
+songs.forEach((element, i) => {
   songArt[i].src = songs[i].coverPath
   songTitle[i].innerText = songs[i].songName
   songArtist[i].innerText = songs[i].songArtist
@@ -60,57 +76,53 @@ songs.forEach((element, i)=>{
   songDate[i].innerText = "1 day ago"
 })
 
-const playerData = () =>{
+const playerData = () => {
   playerName.innerText = songs[songIndex].songName;
-  playerAuthor.innerText =  songs[songIndex].songArtist;
-  footerLogo.src = songs[songIndex].coverPath; 
-
-  console.log(playerName);
-  console.log(playerAuthor);
-  console.log(footerLogo);
+  playerAuthor.innerText = songs[songIndex].songArtist;
+  footerLogo.src = songs[songIndex].coverPath;
 }
 
 
-function play(element){
-    if(audioElement.paused || audioElement.currentTime<=0){
-      audioElement.play();
-      element.classList.remove('fa-play')
-      element.classList.add('fa-pause')
+function play(element) {
+  if (audioElement.paused || audioElement.currentTime <= 0) {
+    audioElement.play();
+    element.classList.remove('fa-play')
+    element.classList.add('fa-pause')
   } else {
-      audioElement.pause();
-      element.classList.add('fa-play')
-      element.classList.remove('fa-pause')
+    audioElement.pause();
+    element.classList.add('fa-play')
+    element.classList.remove('fa-pause')
   }
 
   playerData();
 
-  songItemPlay.forEach((element) =>{
-    if(element.id == songIndex){
+  songItemPlay.forEach((element) => {
+    if (element.id == songIndex) {
       element.classList.remove('fa-play')
       element.classList.add('fa-music')
     }
   })
 }
 
-const makeAllPlay = () =>{
-  songItemPlay.forEach((element)=>{
-    if(!element.classList.contains('fa-play')){
+const makeAllPlay = () => {
+  songItemPlay.forEach((element) => {
+    if (!element.classList.contains('fa-play')) {
       element.classList.add('fa-play');
       element.classList.remove('fa-music');
     }
   })
 }
 
-const navigation = () =>{
-  audioElement.src= songs[songIndex].filePath;
+const navigation = () => {
+  audioElement.src = songs[songIndex].filePath;
   makeAllPlay();
-  audioElement.currentTime=0;
+  audioElement.currentTime = 0;
   audioElement.play();
   masterPlay.classList.remove('fa-play');
   masterPlay.classList.add('fa-pause');
 
-  songItemPlay.forEach((element) =>{
-    if(element.id == songIndex){
+  songItemPlay.forEach((element) => {
+    if (element.id == songIndex) {
       element.classList.remove('fa-play')
       element.classList.add('fa-music')
     }
@@ -119,35 +131,35 @@ const navigation = () =>{
 }
 
 
-masterPlay.addEventListener('click', ()=>{
+masterPlay.addEventListener('click', () => {
   play(masterPlay);
 })
 
-mainPlay.addEventListener('click', () =>{
+mainPlay.addEventListener('click', () => {
   play(main);
-  if(masterPlay.classList.contains("fa-play")){
+  if (masterPlay.classList.contains("fa-play")) {
     masterPlay.classList.remove('fa-play');
     masterPlay.classList.add('fa-pause');
-  } else{
+  } else {
     masterPlay.classList.remove('fa-pause');
     masterPlay.classList.add('fa-play');
   }
 })
 
-audioElement.addEventListener('timeupdate', () =>{
-  let progress = parseInt((audioElement.currentTime)/(audioElement.duration)*100)
+audioElement.addEventListener('timeupdate', () => {
+  let progress = parseInt((audioElement.currentTime) / (audioElement.duration) * 100)
   progressBar.value = progress;
 });
 
-progressBar.addEventListener('change', ()=>{
-  audioElement.currentTime = progressBar.value * audioElement.duration/100;
+progressBar.addEventListener('change', () => {
+  audioElement.currentTime = progressBar.value * audioElement.duration / 100;
 })
 
 
-songItemPlay.forEach((element ,i)=>{
-  element.addEventListener('click', (e) =>{
+songItemPlay.forEach((element, i) => {
+  element.addEventListener('click', (e) => {
     console.log(e.target);
-    songIndex= e.target.id;
+    songIndex = e.target.id;
     makeAllPlay();
     e.target.classList.remove('fa-play');
     e.target.classList.add('fa-music');
@@ -160,49 +172,49 @@ songItemPlay.forEach((element ,i)=>{
   })
 })
 
-progressBar.addEventListener('ended', ()=>{
-  if(audioElement.currentTime == audioElement.duration){
-    if(songIndex >= 5){
+progressBar.addEventListener('ended', () => {
+  if (audioElement.currentTime == audioElement.duration) {
+    if (songIndex >= length) {
       songIndex = 0
-    } else{
+    } else {
       songIndex++;
     }
-  }  
+  }
   navigation();
 })
 
-previousItem.addEventListener('click', () =>{
-  if(songIndex <= 0){
-    songIndex = 5
-  } else{
+previousItem.addEventListener('click', () => {
+  if (songIndex <= 0) {
+    songIndex = length
+  } else {
     songIndex--;
   }
   navigation();
 })
 
-nextItem.addEventListener('click', ()=>{
-    if(songIndex >= 5){
-      songIndex = 0
-    } else{
-      songIndex++;
-    }
-    navigation();
+nextItem.addEventListener('click', () => {
+  if (songIndex >= length) {
+    songIndex = 0
+  } else {
+    songIndex++;
+  }
+  navigation();
 })
 
 
 let volumeSlider = document.getElementById("volume");
 let volumeIcon = document.getElementById("vol-icon");
 
-volumeSlider.addEventListener('change', ()=>{
-  if(volumeSlider.value <= 0 ){
+volumeSlider.addEventListener('change', () => {
+  if (volumeSlider.value <= 0) {
     volumeIcon.classList.remove("fa-volume-off");
     volumeIcon.classList.add("fa-volume-mute");
-  }else if (volumeSlider.value <= 0.7 && volumeSlider.value > 0.3 ){
+  } else if (volumeSlider.value <= 0.7 && volumeSlider.value > 0.3) {
     volumeIcon.classList.remove("fa-volume-high");
     volumeIcon.classList.remove("fa-volume-off");
     volumeIcon.classList.remove("fa-volume-mute");
     volumeIcon.classList.add("fa-volume-low");
-  } else if(volumeSlider.value <= 1 && volumeSlider.value >0.7){
+  } else if (volumeSlider.value <= 1 && volumeSlider.value > 0.7) {
     volumeIcon.classList.remove("fa-volume-low");
     volumeIcon.classList.remove("fa-volume-mute");
     volumeIcon.classList.remove("fa-volume-off");
