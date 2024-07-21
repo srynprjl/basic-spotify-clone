@@ -731,8 +731,10 @@ hr {
     gap: 16px   ;
 }
 
-.songArt{
+.songArt, #footer-logo{
     width: 48px;
+    height: 48px;
+    object-fit: cover;
 }
 .songPlay svg{
     width: 24px;
@@ -751,11 +753,6 @@ hr {
 #playerProgressBar{
     width: 50vw;
     text-align: center;
-}
-
-#footer-logo{
-    width: 48px;
-    height: 48px;
 }
 
 .songTitle, #playerName{
