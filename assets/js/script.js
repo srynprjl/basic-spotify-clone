@@ -41,15 +41,22 @@ let playlists=[
 
 var pName = Array.from(document.getElementsByClassName('tile-title'));
 var pAuthor = Array.from(document.getElementsByClassName('tile-type'));
-
+var pName2 = Array.from(document.getElementsByClassName('playlists-name'));
 
 console.log(pName)
 console.log(pAuthor)
+console.log(pName2)
 
 playlists.forEach((e, i) =>{
-  pName[i].innerHTML = playlists[i].playlistName; 
-  pAuthor[i].innerHTML = "Playlist • " + playlists[i].playlistAuthor;
-} )
+  pName[i].innerHTML = playlists[i].playlistName
+  pAuthor[i].innerHTML = "Playlist • " + playlists[i].playlistAuthor
+})
+
+if(pName2.length != 0){
+  playlists.forEach((e, i) =>{
+    pName2[i].innerHTML = playlists[i].playlistName
+  })
+}
 
 let songs = [
   { songName: "Khaseka Tara", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:01", filePath: "../assets/audio/khasekatara-albatross.mp3", coverPath: "../assets/img/songCover/khasekatara.jpg" },

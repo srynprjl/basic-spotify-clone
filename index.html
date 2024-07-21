@@ -355,49 +355,49 @@
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <span>Nayansha</span>
+                            <span class="playlists-name">Nayansha</span>
                         </div>
                     </a>
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <div>indian subcontinental vibes</div>
+                            <span class="playlists-name">indian subcontinental vibes</span>
                         </div>
                     </a>
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <span>some random nepali songs</span>
+                            <span class="playlists-name">some random nepali songs</span>
                         </div>
                     </a>
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <span>english songs</span>
+                            <span class="playlists-name">english songs</span>
                         </div>
                     </a>
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <span>spanish mix</span>
+                            <span class="playlists-name">spanish mix</span>
                         </div>
                     </a>
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <span>2+2=4</span>
+                            <span class="playlists-name">2+2=4</span>
                         </div>
                     </a>
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <span>beat to the beat</span>
+                            <span class="playlists-name">beat to the beat</span>
                         </div>
                     </a>
                     <a href="./playlist.html">
                         <div class="playlist-btn flex-cntr">
                             <img src="./assets/img/logo.png" />
-                            <span>New playlist 7</span>
+                            <span class="playlists-name">New playlist 7</span>
                         </div>
                     </a>
                 </div>
@@ -513,7 +513,12 @@
     </div>
 
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js">
+        playlists.forEach((element, i) => {
+            pName2 = document.getElementsByClassName('playlists-name')
+            pName2[i].innerHTML = playlists[i].playlistName
+        });
+    </script>
 </body>
 
 </html>
