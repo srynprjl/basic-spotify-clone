@@ -1,16 +1,19 @@
 @font-face {
-    font-family: "Gotham Bold";
-    src: url("../fonts/Gotham-Rounded-Bold.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Gotham Book";
-    src: url("../fonts/Gotham-Rounded-Book_.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Gotham Light";
-    src: url("../fonts/Gotham-Rounded-Light.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Gotham Medium";
-    src: url("../fonts/Gotham-Rounded-Medium.ttf") format("truetype");
-  }
+  font-family: "Gotham Bold";
+  src: url("../fonts/Gotham-Rounded-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/Gotham-Rounded-Book_.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../fonts/Gotham-Rounded-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../fonts/Gotham-Rounded-Medium.ttf") format("truetype");
+}

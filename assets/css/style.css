@@ -34,17 +34,21 @@ a {
   flex-direction: column;
 }
 
+.gap {
+  gap: 16px;
+}
+
 .sidebar {
   width: 300px;
   height: 100vh;
   color: white;
 }
 
-.sidebar > svg {
+.sidebar>svg {
   color: white;
 }
 
-.sidebar > div {
+.sidebar>div {
   padding: 8%;
   border-radius: 10px;
 }
@@ -70,11 +74,8 @@ a {
   background-color: #121212;
 }
 
-.gap {
-  gap: 16px;
-}
 
-.sidebar-options > gap {
+.sidebar-options>.gap {
   gap: 5px;
 }
 
@@ -113,6 +114,7 @@ a {
 .tile-type {
   font-family: "Gotham Book", "Varela Round", sans-serif;
 }
+
 .tile-title {
   font-size: 12px;
 }
@@ -125,7 +127,7 @@ a {
   gap: 4px;
 }
 
-.playlists-tiles > a:hover {
+.playlists-tiles>a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -148,9 +150,7 @@ a {
 
 .playlist-buttons {
   color: white;
-  grid-template-columns: calc(var(--btnsize) / 4) calc(var(--btnsize) / 4) calc(
-      var(--btnsize) / 4
-    ) calc(var(--btnsize) / 4);
+  grid-template-columns: calc(var(--btnsize) / 4) calc(var(--btnsize) / 4) calc(var(--btnsize) / 4) calc(var(--btnsize) / 4);
   grid-gap: 10px;
 }
 
@@ -437,15 +437,15 @@ a {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2f9410;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2f9410;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
@@ -459,15 +459,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* login page */
+
 
 .login-body {
   background: rgb(148, 148, 148);
-  background: linear-gradient(
-    180deg,
-    rgba(148, 148, 148, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(148, 148, 148, 1) 0%,
+      rgba(0, 0, 0, 1) 100%);
   height: auto;
   display: flex;
   align-items: center;
@@ -489,8 +487,10 @@ input:checked + .slider:before {
   gap: 30px;
 }
 
-.login-title, .login-logo, .login-main{
-    justify-content: center;
+.login-title,
+.login-logo,
+.login-main {
+  justify-content: center;
 }
 
 .login-title {
@@ -529,152 +529,155 @@ hr {
 }
 
 
-.label{
-    font-size: 14px;
+.label {
+  font-size: 14px;
 }
 
-.login-input input{
-    padding: 12px;
-    width: 300px;
-    background-color: transparent;
-    border: 1px solid gray;
-    border-radius: 4px;
+.login-input input {
+  padding: 12px;
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 4px;
 }
 
-.login-input input:hover{
-    border-color: white;
+.login-input input:hover {
+  border-color: white;
 }
 
-.login-input input:focus{
-    border: none;
-    outline: 2px solid white;
-    outline-offset: -2px;
-    transition: 1s linear;
+.login-input input:focus {
+  border: none;
+  outline: 2px solid white;
+  outline-offset: -2px;
+  transition: 1s linear;
 }
 
-.login-email, .login-password{
-    gap:4px;
+.login-email,
+.login-password {
+  gap: 4px;
 }
 
-.remember-me .switch{
-    height: 16px;
-    width: 30px;
+.remember-me .switch {
+  height: 16px;
+  width: 30px;
 }
 
-.remember-me .slider:before{
-    height: 12px;
-    width: 12px;
-    left: 3px;
-    bottom: 2px;
+.remember-me .slider:before {
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 2px;
 }
 
-.remember-me input:checked + .slider:before {
-    -webkit-transform: translateX(12px);
-    -ms-transform: translateX(12px);
-    transform: translateX(12px);
-  }
+.remember-me input:checked+.slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
 
-  .rmbr{
-    font-size: 10px;
-  }
+.rmbr {
+  font-size: 10px;
+}
 
-  .button{
-    justify-content: center;
-  }
+.button {
+  justify-content: center;
+}
 
-  .button button{
-    background-color: greenyellow;
-    border: none;
-    border-radius: 100px;
-    padding: 14px;
-    width: 350px;
-    font-size: 14px;
-  }
+.button button {
+  background-color: greenyellow;
+  border: none;
+  border-radius: 100px;
+  padding: 14px;
+  width: 350px;
+  font-size: 14px;
+}
 
-  .button button:hover{
-    background-color: transparent;
-    color: white;
-    outline: 1px solid greenyellow;
-    outline-offset: -1px;
-  }
+.button button:hover {
+  background-color: transparent;
+  color: white;
+  outline: 1px solid greenyellow;
+  outline-offset: -1px;
+}
 
-  .forget-password{
-    justify-content: center;
-    font-size: 14px;
-    text-decoration: underline;
-  }
+.forget-password {
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: underline;
+}
 
-  .forget-password a p, .signup a p{
-    text-decoration: underline;
-  }
+.forget-password a p,
+.signup a p {
+  text-decoration: underline;
+}
 
-  .forget-password a:hover, .signup a span:hover{
-    color: #2f9410;
-  }
+.forget-password a:hover,
+.signup a span:hover {
+  color: #2f9410;
+}
 
-  .signup{
-    justify-content: center;
-  }
+.signup {
+  justify-content: center;
+}
 
-  .signup span{
-    color: gray;
-  }
+.signup span {
+  color: gray;
+}
 
-  .signup a span{
-    color: white;
-  }
+.signup a span {
+  color: white;
+}
 
-  .dropdown{
-    display: none;
-    position: absolute;
-    right: 40px;
-    background-color: #121212;
-    min-width: 160px;
-    z-index: 1;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 40px;
+  background-color: #121212;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
 
-  .dropdown a {
-    padding: 12px 16px;
-    display: block;
-  }
+.dropdown a {
+  padding: 12px 16px;
+  display: block;
+}
 
-  .show{
-    display: block;
-  }
+.show {
+  display: block;
+}
 
-.playlist-content{
+.playlist-content {
   background: linear-gradient(180deg, #014379, #121212);
   color: white;
 }
 
-.playlist-icon img{
+.playlist-icon img {
   width: 128px;
   height: 128px;
 }
 
-.playlist-type{
+.playlist-type {
   font-size: 16px;
 }
 
-.playlist-title{
+.playlist-title {
   font-size: 48px;
   font-weight: 800;
 }
 
-.playlist-desc{
+.playlist-desc {
   font-size: 14px;
 }
 
-.playlist-author{
+.playlist-author {
   font-size: 14px;
 }
 
-.play{
+.play {
   gap: 10px;
 }
 
-.playlist-start button{
+.playlist-start button {
   background-color: #2f9410;
   padding: 16px 17.9px;
   color: white;
@@ -683,7 +686,7 @@ hr {
   font-size: 20px;
 }
 
-.playlist-more-options{
+.playlist-more-options {
   align-content: center;
 }
 
@@ -693,11 +696,11 @@ hr {
   color: gray;
 }
 
-.playlist-sorts{
+.playlist-sorts {
   font-size: 14px;
 }
 
-.player-footer{
+.player-footer {
   position: absolute;
   left: -2px;
   bottom: 0;
@@ -710,62 +713,73 @@ hr {
   color: white;
 }
 
-.icons div i{
-    font-size: 24px;
-    cursor: pointer;
+.icons div i {
+  font-size: 24px;
+  cursor: pointer;
 }
 
 
-.songItem{
-    padding: 10px;
-    border-radius: 10px;
+.songItem {
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.songflex, .playerData{
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
+.songflex,
+.playerData {
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
 }
 
-.songData, .playerData{
-    gap: 16px   ;
+.songData,
+.playerData {
+  gap: 16px;
 }
 
-.songArt, #footer-logo{
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
-}
-.songPlay svg{
-    width: 24px;
-    height: 24px;
+.songArt,
+#footer-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
 }
 
-.songItem:hover{
-    background-color: #121212;
+.songPlay svg {
+  width: 24px;
+  height: 24px;
 }
 
-.icons{
-    gap: 16px;
-    justify-content: center;
+.songItem:hover {
+  background-color: #121212;
 }
 
-#playerProgressBar{
-    width: 50vw;
-    text-align: center;
+.icons {
+  gap: 16px;
+  justify-content: center;
 }
 
-.songTitle, #playerName{
+#playerProgressBar {
+  width: 50vw;
+  text-align: center;
+}
+
+.songTitle,
+#playerName {
   font-size: 14px;
 }
 
-.songArtist, #playerArtist, .songAlbum, .songDate, .songDuration{
+.songArtist,
+#playerArtist,
+.songAlbum,
+.songDate,
+.songDuration {
   font-size: 12px;
   color: gray;
 }
 
 
-.songTitle:hover,.songArtist:hover,.songAlbum:hover{
+.songTitle:hover,
+.songArtist:hover,
+.songAlbum:hover {
   text-decoration: underline;
   color: white;
 }
