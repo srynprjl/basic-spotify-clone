@@ -42,6 +42,19 @@ let songs = [
   { songName: "Mercedez Benz", songArtist: "Cobweb", songAlbum: "Cobweb Hits", songDuration: "5:04", filePath: "../assets/audio/mercedezbenz-cobweb.mp3", coverPath: "../assets/songCover/mercedezbenz.jpg" },
 ]
 
+function shuffle(array) {
+  let currentIndex = array.length;
+  while (currentIndex != 0) {
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+}
+
+shuffle(songs)
+
+
 var length = songs.length - 1;
 document.getElementById('time').innerText = length+1 + " songs"
 let audioElement = new Audio(songs[0].filePath);
@@ -62,8 +75,6 @@ let footerLogo = document.getElementById('footer-logo');
 let songItemPlay = Array.from(document.getElementsByClassName("songitemplay"));
 let previousItem = document.getElementById('prev');
 let nextItem = document.getElementById('next');
-
-
 
 //setting data in html
 songs.forEach((element, i) => {
