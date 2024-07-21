@@ -22,25 +22,24 @@ window.onclick = function (event) {
 
 
 let songs = [
-  { songIndex: "0", songName: "Khaseka Tara", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:01", filePath: "../assets/audio/khasekatara-albatross.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "1", songName: "Marijau", songArtist: "Bikki Gurung", songAlbum: "Bikki Gurung Hits", songDuration: "4:25", filePath: "../assets/audio/marijau-bikki.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "2", songName: "Manaka Kura", songArtist: "Purna Rai", songAlbum: "Purna Rai Hits", songDuration: "2:52", filePath: "../assets/audio/manakakura-purna.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "3", songName: "Sapana Ko Mayalu", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "3:04", filePath: "../assets/audio/sapanakomayalu-elements.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "4", songName: "Birsiney Hau Ki", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "3:06", filePath: "../assets/audio/birsiney-elements.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "5", songName: "Euta Pari", songArtist: "Crew On Destiny", songAlbum: "COD Hits", songDuration: "3:40", filePath: "../assets/audio/eutapari-cod.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "6", songName: "Timi Bhane", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:28", filePath: "../assets/audio/timibhane-albatross.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "7", songName: "Rail Garee", songArtist: "Bipul Chettri", songAlbum: "Bipul Chettri Hits", songDuration: "3:06", filePath: "../assets/audio/railgaree-bipul.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "8", songName: "Sadhana", songArtist: "John Rai", songAlbum: "John Rai Hits", songDuration: "2:01", filePath: "../assets/audio/sadhana-johnrai.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "9", songName: "Mero Prem", songArtist: "AXIX", songAlbum: "AXIX Hits", songDuration: "3:42", filePath: "../assets/audio/meroprem-axix.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "10", songName: "Syndicate", songArtist: "Bipul Chettri", songAlbum: "Bipul Chettri Hits", songDuration: "4:44", filePath: "../assets/audio/syndicate-bipul.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "11", songName: "Samarpan", songArtist: "Sabin Rai", songAlbum: "Sabin Rai Hits", songDuration: "3:46", filePath: "../assets/audio/samarpan-sabinrai.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "12", songName: "Adhuro Prem", songArtist: "AXIX", songAlbum: "AXIX Hits", songDuration: "4:15", filePath: "../assets/audio/adhuroprem-axix.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "13", songName: "Nachaheko Hoina", songArtist: "The Edge Band", songAlbum: "Edge Band Hits", songDuration: "5:27", filePath: "../assets/audio/nachahekohoina-theedge.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "14", songName: "Samjhana Chaa Baki", songArtist: "Bibash JK", songAlbum: "Bibash Hits", songDuration: "2:35", filePath: "../assets/audio/samjhana-bibash.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "15", songName: "Putali", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "4:30", filePath: "../assets/audio/putali-elements.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "16", songName: "Aaudai Jadai", songArtist: "The Uglyz", songAlbum: "The Uglyz Hits", songDuration: "4:09", filePath: "../assets/audio/aaudaijadai-theuglyz.mp3", coverPath: "../assets/img/cover/logo.png" },
-  { songIndex: "17", songName: "Mercedez Benz", songArtist: "Cobweb", songAlbum: "Cobweb Hits", songDuration: "5:04", filePath: "../assets/audio/mercedezbenz-cobweb.mp3", coverPath: "../assets/img/cover/logo.png" },
-
+  { songName: "Khaseka Tara", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:01", filePath: "../assets/audio/khasekatara-albatross.mp3", coverPath: "../assets/songCover/khasekatara.jpg" },
+  { songName: "Marijau", songArtist: "Bikki Gurung", songAlbum: "Bikki Gurung Hits", songDuration: "4:25", filePath: "../assets/audio/marijau-bikki.mp3", coverPath: "../assets/songCover/marijau.jpg" },
+  { songName: "Manaka Kura", songArtist: "Purna Rai", songAlbum: "Purna Rai Hits", songDuration: "2:52", filePath: "../assets/audio/manakakura-purna.mp3", coverPath: "../assets/songCover/manakakura.jpg" },
+  { songName: "Sapana Ko Mayalu", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "3:04", filePath: "../assets/audio/sapanakomayalu-elements.mp3", coverPath: "../assets/songCover/sapanakomayalu.jpg" },
+  { songName: "Birsiney Hau Ki", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "3:06", filePath: "../assets/audio/birsiney-elements.mp3", coverPath: "../assets/songCover/birsineyhauki.jpg" },
+  { songName: "Euta Pari", songArtist: "Crew On Destiny", songAlbum: "COD Hits", songDuration: "3:40", filePath: "../assets/audio/eutapari-cod.mp3", coverPath: "../assets/songCover/eutapari.jpg" },
+  { songName: "Timi Bhane", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:28", filePath: "../assets/audio/timibhane-albatross.mp3", coverPath: "../assets/songCover/timibhane.jpg" },
+  { songName: "Rail Garee", songArtist: "Bipul Chettri", songAlbum: "Bipul Chettri Hits", songDuration: "3:06", filePath: "../assets/audio/railgaree-bipul.mp3", coverPath: "../assets/songCover/railgaree.jpg" },
+  { songName: "Sadhana", songArtist: "John Rai", songAlbum: "John Rai Hits", songDuration: "2:01", filePath: "../assets/audio/sadhana-johnrai.mp3", coverPath: "../assets/songCover/sadhana.jpg" },
+  { songName: "Mero Prem", songArtist: "AXIX", songAlbum: "AXIX Hits", songDuration: "3:42", filePath: "../assets/audio/meroprem-axix.mp3", coverPath: "../assets/songCover/meroprem.jpg" },
+  { songName: "Syndicate", songArtist: "Bipul Chettri", songAlbum: "Bipul Chettri Hits", songDuration: "4:44", filePath: "../assets/audio/syndicate-bipul.mp3", coverPath: "../assets/songCover/syndicate.jpg" },
+  { songName: "Samarpan", songArtist: "Sabin Rai", songAlbum: "Sabin Rai Hits", songDuration: "3:46", filePath: "../assets/audio/samarpan-sabinrai.mp3", coverPath: "../assets/songCover/samarpan.jpg" },
+  { songName: "Adhuro Prem", songArtist: "AXIX", songAlbum: "AXIX Hits", songDuration: "4:15", filePath: "../assets/audio/adhuroprem-axix.mp3", coverPath: "../assets/songCover/adhuroprem.jpg" },
+  { songName: "Nachaheko Hoina", songArtist: "The Edge Band", songAlbum: "Edge Band Hits", songDuration: "5:27", filePath: "../assets/audio/nachahekohoina-theedge.mp3", coverPath: "../assets/songCover/nachahekohoina.jpg" },
+  { songName: "Samjhana Chaa Baki", songArtist: "Bibash JK", songAlbum: "Bibash Hits", songDuration: "2:35", filePath: "../assets/audio/samjhana-bibash.mp3", coverPath: "../assets/songCover/samjhanachaabaki.jpg" },
+  { songName: "Putali", songArtist: "The Elements", songAlbum: "The Elements Hits", songDuration: "4:30", filePath: "../assets/audio/putali-elements.mp3", coverPath: "../assets/songCover/putali.jpg" },
+  { songName: "Aaudai Jadai", songArtist: "The Uglyz", songAlbum: "The Uglyz Hits", songDuration: "4:09", filePath: "../assets/audio/aaudaijadai-theuglyz.mp3", coverPath: "../assets/songCover/aaudaijadai.jpg" },
+  { songName: "Mercedez Benz", songArtist: "Cobweb", songAlbum: "Cobweb Hits", songDuration: "5:04", filePath: "../assets/audio/mercedezbenz-cobweb.mp3", coverPath: "../assets/songCover/mercedezbenz.jpg" },
 ]
 
 var length = songs.length - 1;
