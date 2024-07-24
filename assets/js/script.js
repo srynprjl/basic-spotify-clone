@@ -43,9 +43,6 @@ var pName = Array.from(document.getElementsByClassName('tile-title'));
 var pAuthor = Array.from(document.getElementsByClassName('tile-type'));
 var pName2 = Array.from(document.getElementsByClassName('playlists-name'));
 
-console.log(pName)
-console.log(pAuthor)
-console.log(pName2)
 
 playlists.forEach((e, i) =>{
   pName[i].innerHTML = playlists[i].playlistName
@@ -189,6 +186,18 @@ audioElement.addEventListener('timeupdate', () => {
 progressBar.addEventListener('change', () => {
   audioElement.currentTime = progressBar.value * audioElement.duration / 100;
 })
+
+
+audioElement.addEventListener('ended', () => {
+  setTimeout(100)
+  if (songIndex >= length) {
+    songIndex = 0
+  } else {
+    songIndex++;
+  }
+  navigation();
+})
+
 
 
 songItemPlay.forEach((element, i) => {
