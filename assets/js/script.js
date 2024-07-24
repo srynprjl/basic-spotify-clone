@@ -29,24 +29,27 @@ function shuffle(array) {
 
 
 let playlists=[
-  { playlistName: "Beast Mode", playlistAuthor: "nefo", playlistCover: "" },
-  { playlistName: "Nepali Aesthetics", playlistAuthor: "nefoli", playlistCover: "" },
-  { playlistName: "Nepali Vibes", playlistAuthor: "siri", playlistCover: ""} ,
-  { playlistName: "song to vibe on", playlistAuthor: "n_rani", playlistCover: "" },
-  { playlistName: "songs to study", playlistAuthor: "sp4090_", playlistCover: "" },
-  { playlistName: "nepali hit songs", playlistAuthor: "intrinix", playlistCover: "" },
-  { playlistName: "vibeful nepali", playlistAuthor: "scttasla", playlistCover: "" },
-  { playlistName: "mero playlist", playlistAuthor: "cwabc", playlistCover: "" }
+  { playlistName: "Beast Mode", playlistAuthor: "nefo", playlistCover: "./assets/img/playlistCover/play1.jpg" },
+  { playlistName: "Nepali Aesthetics", playlistAuthor: "nefoli", playlistCover: "./assets/img/playlistCover/play3.jpg" },
+  { playlistName: "Nepali Vibes", playlistAuthor: "siri", playlistCover: "./assets/img/playlistCover/play2.jpg"} ,
+  { playlistName: "song to vibe on", playlistAuthor: "n_rani", playlistCover: "./assets/img/playlistCover/play4.jpg" },
+  { playlistName: "songs to study", playlistAuthor: "sp4090_", playlistCover: "./assets/img/playlistCover/play5.jpg" },
+  { playlistName: "nepali hit songs", playlistAuthor: "intrinix", playlistCover: "./assets/img/playlistCover/play6.jpg" },
+  { playlistName: "vibeful nepali", playlistAuthor: "scttasla", playlistCover: "./assets/img/playlistCover/play7.jpg" },
+  { playlistName: "mero playlist", playlistAuthor: "cwabc", playlistCover: "./assets/img/playlistCover/play8.jpg" }
 ]
 
 var pName = Array.from(document.getElementsByClassName('tile-title'));
 var pAuthor = Array.from(document.getElementsByClassName('tile-type'));
 var pName2 = Array.from(document.getElementsByClassName('playlists-name'));
+var pImg = Array.from(document.getElementsByClassName('tile-img'))
+
 
 
 playlists.forEach((e, i) =>{
   pName[i].innerHTML = playlists[i].playlistName
   pAuthor[i].innerHTML = "Playlist • " + playlists[i].playlistAuthor
+  pImg[i].getElementsByTagName('img')[0].src = playlists[i].playlistCover
 })
 
 if(pName2.length != 0){
@@ -197,7 +200,6 @@ audioElement.addEventListener('ended', () => {
   }
   navigation();
 })
-
 
 
 songItemPlay.forEach((element, i) => {
