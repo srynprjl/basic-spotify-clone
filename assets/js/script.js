@@ -58,6 +58,8 @@ if(pName2.length != 0){
   })
 }
 
+
+
 let songs = [
   { songName: "Khaseka Tara", songArtist: "Albatross", songAlbum: "Albatross Hits", songDuration: "5:01", filePath: "./assets/audio/khasekatara-albatross.mp3", coverPath: "./assets/img/songCover/khasekatara.jpg" },
   { songName: "Marijau", songArtist: "Bikki Gurung", songAlbum: "Bikki Gurung Hits", songDuration: "4:25", filePath: "./assets/audio/marijau-bikki.mp3", coverPath: "./assets/img/songCover/marijau.jpg" },
