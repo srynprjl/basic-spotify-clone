@@ -583,7 +583,7 @@ hr {
   justify-content: center;
 }
 
-.button button {
+.button input[type="submit"] {
   background-color: greenyellow;
   border: none;
   border-radius: 100px;
@@ -592,7 +592,7 @@ hr {
   font-size: 14px;
 }
 
-.button button:hover {
+.button input[type="submit"]:hover {
   background-color: transparent;
   color: white;
   outline: 1px solid greenyellow;
