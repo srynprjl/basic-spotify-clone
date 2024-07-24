@@ -122,6 +122,9 @@ const playerData = () => {
   playerName.innerText = songs[songIndex].songName;
   playerAuthor.innerText = songs[songIndex].songArtist;
   footerLogo.src = songs[songIndex].coverPath;
+  playerName.style.visibility = "visible";
+  playerAuthor.style.visibility = "visible";
+  footerLogo.style.visibility = "visible";
 }
 
 function play(element) {

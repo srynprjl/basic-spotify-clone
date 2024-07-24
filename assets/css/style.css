@@ -767,6 +767,10 @@ hr {
   font-size: 14px;
 }
 
+#playerName, #playerArtist, #footer-logo{
+  visibility: hidden;
+}
+
 .songArtist,
 #playerArtist,
 .songAlbum,
