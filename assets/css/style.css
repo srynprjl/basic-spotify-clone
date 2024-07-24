@@ -660,16 +660,16 @@ hr {
   font-size: 16px;
 }
 
-.playlist-title {
+#playlist-title {
   font-size: 48px;
   font-weight: 800;
 }
 
-.playlist-desc {
+#playlist-desc {
   font-size: 14px;
 }
 
-.playlist-author {
+#playlist-author {
   font-size: 14px;
 }
 

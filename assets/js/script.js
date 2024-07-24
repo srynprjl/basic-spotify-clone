@@ -83,10 +83,12 @@ let songs = [
 
 shuffle(songs)
 
-var length = songs.length - 1;
-document.getElementById('time').innerText = length + 1 + " songs"
 let audioElement = new Audio(songs[0].filePath);
 let songIndex = 0;
+
+
+var length = songs.length - 1;
+document.getElementById('time').innerText = length + 1 + " songs"
 let mainPlay = document.getElementById("start");
 let main = document.getElementById("main-play")
 let masterPlay = document.getElementById('masterPlay');
@@ -97,6 +99,8 @@ let songArtist = Array.from(document.getElementsByClassName('songArtist'));
 let songAlbum = Array.from(document.getElementsByClassName('songAlbum'));
 let songDate = Array.from(document.getElementsByClassName('songDate'));
 let songDuration = Array.from(document.getElementsByClassName('songDuration'));
+
+
 let playerName = document.getElementById('playerName');
 let playerAuthor = document.getElementById('playerArtist');
 let footerLogo = document.getElementById('footer-logo');
@@ -259,3 +263,73 @@ volumeSlider.addEventListener('change', () => {
   }
   audioElement.volume = volumeSlider.value;
 })
+
+
+// not working code
+
+// var playlistElement = Array.from(document.getElementsByClassName('playlist-element'));
+// function playlistOnClick(){
+//   var destTitle  = document.getElementById('playlist-title');
+//   var destAuthor = document.getElementById('playlist-author');
+//   var destCover = document.getElementById('pl-icon');
+
+//   console.log(localStorage.getItem("title"))
+//   console.log(localStorage.getItem("author"))
+//   localStorage.clear();
+// //  destTitle.innerText = localStorage.getItem("title");
+// //  destAuthor.innerText = localStorage.getItem("author");
+
+// }
+
+// console.log(playlistElement)
+
+// playlistElement[0].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[0].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[0].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[0].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistElement[1].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[1].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[1].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[1].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistElement[2].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[2].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[2].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[2].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistElement[3].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[3].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[3].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[3].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistElement[4].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[4].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[4].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[4].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistElement[5].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[5].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[5].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[5].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistElement[6].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[6].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[6].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[6].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistElement[7].addEventListener('click', ()=> {
+//   localStorage.setItem("title", playlistElement[7].getElementsByClassName('tile-title')[0].innerText);
+//   localStorage.setItem("author",  playlistElement[7].getElementsByClassName('tile-info')[0].innerText);
+//   localStorage.setItem("cover", playlistElement[7].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
+// })
+
+// playlistOnClick();
+
