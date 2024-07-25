@@ -43,7 +43,6 @@ var pName = Array.from(document.getElementsByClassName('tile-title'));
 var pAuthor = Array.from(document.getElementsByClassName('tile-type'));
 var pName2 = Array.from(document.getElementsByClassName('playlists-name'));
 var pImg = Array.from(document.getElementsByClassName('tile-img'))
-var pImg2 = Array.from(document.getElementsByClassName('playlist-btn'));
 
 
 
@@ -51,7 +50,7 @@ playlists.forEach((e, i) =>{
   pName[i].innerHTML = playlists[i].playlistName
   pAuthor[i].innerHTML = "Playlist • " + playlists[i].playlistAuthor
   pImg[i].getElementsByTagName('img')[0].src = playlists[i].playlistCover
-  pImg2[i].getElementsByTagName('img')[0].src = playlists[i].playlistCover
+  // pImg2[i].getElementsByTagName('img')[0].src = playlists[i].playlistCover
 })
 
 if(pName2.length != 0){
