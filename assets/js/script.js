@@ -43,6 +43,7 @@ var pName = Array.from(document.getElementsByClassName('tile-title'));
 var pAuthor = Array.from(document.getElementsByClassName('tile-type'));
 var pName2 = Array.from(document.getElementsByClassName('playlists-name'));
 var pImg = Array.from(document.getElementsByClassName('tile-img'))
+var pImg2 = Array.from(document.getElementsByClassName('playlist-btn'));
 
 
 
@@ -50,6 +51,7 @@ playlists.forEach((e, i) =>{
   pName[i].innerHTML = playlists[i].playlistName
   pAuthor[i].innerHTML = "Playlist • " + playlists[i].playlistAuthor
   pImg[i].getElementsByTagName('img')[0].src = playlists[i].playlistCover
+  pImg2[i].getElementsByTagName('img')[0].src = playlists[i].playlistCover
 })
 
 if(pName2.length != 0){
@@ -291,48 +293,6 @@ volumeSlider.addEventListener('change', () => {
 //   localStorage.setItem("title", playlistElement[0].getElementsByClassName('tile-title')[0].innerText);
 //   localStorage.setItem("author",  playlistElement[0].getElementsByClassName('tile-info')[0].innerText);
 //   localStorage.setItem("cover", playlistElement[0].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
-// })
-
-// playlistElement[1].addEventListener('click', ()=> {
-//   localStorage.setItem("title", playlistElement[1].getElementsByClassName('tile-title')[0].innerText);
-//   localStorage.setItem("author",  playlistElement[1].getElementsByClassName('tile-info')[0].innerText);
-//   localStorage.setItem("cover", playlistElement[1].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
-// })
-
-// playlistElement[2].addEventListener('click', ()=> {
-//   localStorage.setItem("title", playlistElement[2].getElementsByClassName('tile-title')[0].innerText);
-//   localStorage.setItem("author",  playlistElement[2].getElementsByClassName('tile-info')[0].innerText);
-//   localStorage.setItem("cover", playlistElement[2].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
-// })
-
-// playlistElement[3].addEventListener('click', ()=> {
-//   localStorage.setItem("title", playlistElement[3].getElementsByClassName('tile-title')[0].innerText);
-//   localStorage.setItem("author",  playlistElement[3].getElementsByClassName('tile-info')[0].innerText);
-//   localStorage.setItem("cover", playlistElement[3].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
-// })
-
-// playlistElement[4].addEventListener('click', ()=> {
-//   localStorage.setItem("title", playlistElement[4].getElementsByClassName('tile-title')[0].innerText);
-//   localStorage.setItem("author",  playlistElement[4].getElementsByClassName('tile-info')[0].innerText);
-//   localStorage.setItem("cover", playlistElement[4].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
-// })
-
-// playlistElement[5].addEventListener('click', ()=> {
-//   localStorage.setItem("title", playlistElement[5].getElementsByClassName('tile-title')[0].innerText);
-//   localStorage.setItem("author",  playlistElement[5].getElementsByClassName('tile-info')[0].innerText);
-//   localStorage.setItem("cover", playlistElement[5].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
-// })
-
-// playlistElement[6].addEventListener('click', ()=> {
-//   localStorage.setItem("title", playlistElement[6].getElementsByClassName('tile-title')[0].innerText);
-//   localStorage.setItem("author",  playlistElement[6].getElementsByClassName('tile-info')[0].innerText);
-//   localStorage.setItem("cover", playlistElement[6].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
-// })
-
-// playlistElement[7].addEventListener('click', ()=> {
-//   localStorage.setItem("title", playlistElement[7].getElementsByClassName('tile-title')[0].innerText);
-//   localStorage.setItem("author",  playlistElement[7].getElementsByClassName('tile-info')[0].innerText);
-//   localStorage.setItem("cover", playlistElement[7].getElementsByClassName('tile-img')[0].getElementsByTagName('img')[0].src);  
 // })
 
 // playlistOnClick();
