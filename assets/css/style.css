@@ -787,3 +787,7 @@ hr {
   text-decoration: underline;
   color: white;
 }
+
+.profile-btn{
+  cursor: pointer;
+}

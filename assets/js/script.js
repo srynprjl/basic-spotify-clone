@@ -193,6 +193,8 @@ mainPlay.addEventListener('click', () => {
 audioElement.addEventListener('timeupdate', () => {
   let progress = parseInt((audioElement.currentTime) / (audioElement.duration) * 100)
   progressBar.value = progress;
+
+  // console.log(progressBar.value);
 });
 
 progressBar.addEventListener('change', () => {
@@ -268,7 +270,6 @@ volumeSlider.addEventListener('change', () => {
 })
 
 
-// not working code
 
 // var playlistElement = Array.from(document.getElementsByClassName('playlist-element'));
 // function playlistOnClick(){
