@@ -9,6 +9,7 @@ A frontend clone of Spotify made for my college project using HTML, CSS and Java
 **To-Do:**
 - Responsive Design
 - Add missing pages
+
 ## Screenshots
 
-
+![Dashboard](/assets/screenshots/dashboard.png)
