@@ -13,3 +13,6 @@ A frontend clone of Spotify made for my college project using HTML, CSS and Java
 ## Screenshots
 
 ![Dashboard](/assets/screenshots/dashboard.png)
+
+
+[Live Website](url: 'https://spotify.nefoli.in');
